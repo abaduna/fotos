@@ -1,0 +1,14 @@
+<app-spiner *ngIf="louding;"></app-spiner>
+
+<div  *ngIf="!louding;" class="row row-cols-1 row-cols-md-4 g-4">
+    <div *ngFor="let imaganes of listImaganes" class="col">
+      <div class="card">
+        <img [src]="imaganes.previewURL" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{imaganes.tags}}</h5>
+        
+        </div>
+      </div>
+    </div>
+
+  </div>
